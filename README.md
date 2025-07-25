@@ -20,6 +20,10 @@ A modern, responsive website for **FabLab RedSea STEM High School**, designed to
 ---
 
 ##  Installation & Setup
+open online by this link: https://hasona57.github.io/FabLab-RedSea-STEM-High-School/
+
+or
+
 To run this website locally:
 
 ```bash
