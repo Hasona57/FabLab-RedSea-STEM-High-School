@@ -2,32 +2,183 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png" href="Images/Robotics_Logo.jpg" />
-  <title>Robotics Sessions</title>
+  <title>Robotics Sessions - FabLab RedSea</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+<body class="bg-gradient-to-br from-blue-50 via-white to-cyan-50 text-gray-800 flex flex-col min-h-screen">
 
-  <header class="bg-white shadow-md p-4 sticky top-0 z-10">
+  <header class="bg-white/80 backdrop-blur-md shadow-md p-4 sticky top-0 z-10">
     <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-lg md:text-xl font-bold text-blue-600">Robotics Branch</h1>
+      <div class="flex items-center gap-3">
+        <img src="Images/Robotics_Logo.jpg" alt="Robotics" class="w-10 h-10 rounded-full">
+        <h1 class="text-lg md:text-xl font-bold text-blue-600">Robotics Branch</h1>
+      </div>
       <a href="index.html" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 bg-blue-50 hover:bg-blue-100 px-4 py-2 rounded-full font-medium shadow transition">← Back to Home</a>
     </div>
   </header>
 
   <main class="container mx-auto px-4 py-8 flex-1">
-    <h2 class="text-2xl md:text-3xl font-bold text-center text-blue-600 mb-8">Session Modules</h2>
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-blue-600 mb-4">Robotics Sessions</h2>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">Learn coding, automation, and robotics through hands-on projects and real-world applications.</p>
+    </div>
 
-    <div class="flex flex-col gap-6">
-      <label for="modal-1" class="bg-blue-100 p-8 sm:p-10 rounded-3xl text-center shadow-lg hover:scale-105 hover:bg-blue-200 transition-all duration-300 cursor-pointer font-semibold text-xl sm:text-2xl">
-        Session 1
-      </label>
-      <label for="modal-2" class="bg-blue-100 p-8 sm:p-10 rounded-3xl text-center shadow-lg hover:scale-105 hover:bg-blue-200 transition-all duration-300 cursor-pointer font-semibold text-xl sm:text-2xl">
-        Session 2
-      </label>
-      <label for="modal-3" class="bg-blue-100 p-8 sm:p-10 rounded-3xl text-center shadow-lg hover:scale-105 hover:bg-blue-200 transition-all duration-300 cursor-pointer font-semibold text-xl sm:text-2xl">
-        Session 3
-      </label>
+    <div class="grid gap-8 max-w-4xl mx-auto">
+      <!-- Session 1 -->
+      <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300">
+        <div class="bg-gradient-to-r from-blue-500 to-cyan-500 p-6 text-white">
+          <h3 class="text-2xl font-bold mb-2">Session 1: Introduction to Robotics & Programming</h3>
+          <p class="text-blue-100">Learn the basics of robotics and programming fundamentals</p>
+        </div>
+        <div class="p-6">
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <h4 class="font-semibold text-blue-700 mb-3">What You'll Learn:</h4>
+              <ul class="space-y-2 text-gray-600">
+                <li class="flex items-center gap-2">✓ Basic programming concepts</li>
+                <li class="flex items-center gap-2">✓ Introduction to Arduino</li>
+                <li class="flex items-center gap-2">✓ Electronic components and circuits</li>
+                <li class="flex items-center gap-2">✓ Simple robot assembly</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-semibold text-blue-700 mb-3">First Projects:</h4>
+              <ul class="space-y-2 text-gray-600">
+                <li class="flex items-center gap-2">✓ LED blinking circuits</li>
+                <li class="flex items-center gap-2">✓ Simple motor control</li>
+                <li class="flex items-center gap-2">✓ Basic sensor reading</li>
+                <li class="flex items-center gap-2">✓ Line following robot</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-6 flex justify-center">
+            <label for="modal-1" class="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition cursor-pointer">
+              Watch Session Video
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Session 2 -->
+      <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300">
+        <div class="bg-gradient-to-r from-cyan-500 to-teal-500 p-6 text-white">
+          <h3 class="text-2xl font-bold mb-2">Session 2: Advanced Robotics & Automation</h3>
+          <p class="text-cyan-100">Master advanced robotics concepts and automation</p>
+        </div>
+        <div class="p-6">
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <h4 class="font-semibold text-cyan-700 mb-3">Advanced Skills:</h4>
+              <ul class="space-y-2 text-gray-600">
+                <li class="flex items-center gap-2">✓ Advanced programming logic</li>
+                <li class="flex items-center gap-2">✓ Multiple sensor integration</li>
+                <li class="flex items-center gap-2">✓ Motor control and PID</li>
+                <li class="flex items-center gap-2">✓ Wireless communication</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-semibold text-cyan-700 mb-3">Complex Projects:</h4>
+              <ul class="space-y-2 text-gray-600">
+                <li class="flex items-center gap-2">✓ Obstacle avoidance robot</li>
+                <li class="flex items-center gap-2">✓ Bluetooth controlled car</li>
+                <li class="flex items-center gap-2">✓ Automated sorting system</li>
+                <li class="flex items-center gap-2">✓ Smart home automation</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-6 flex justify-center">
+            <label for="modal-2" class="bg-cyan-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-cyan-700 transition cursor-pointer">
+              Watch Session Video
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Session 3 -->
+      <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300">
+        <div class="bg-gradient-to-r from-teal-500 to-green-500 p-6 text-white">
+          <h3 class="text-2xl font-bold mb-2">Session 3: Competition Robotics & AI</h3>
+          <p class="text-teal-100">Prepare for competitions and explore AI integration</p>
+        </div>
+        <div class="p-6">
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <h4 class="font-semibold text-teal-700 mb-3">Competition Skills:</h4>
+              <ul class="space-y-2 text-gray-600">
+                <li class="flex items-center gap-2">✓ Competition strategy</li>
+                <li class="flex items-center gap-2">✓ Advanced algorithms</li>
+                <li class="flex items-center gap-2">✓ Team collaboration</li>
+                <li class="flex items-center gap-2">✓ Performance optimization</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-semibold text-teal-700 mb-3">AI & Future Tech:</h4>
+              <ul class="space-y-2 text-gray-600">
+                <li class="flex items-center gap-2">✓ Machine learning basics</li>
+                <li class="flex items-center gap-2">✓ Computer vision</li>
+                <li class="flex items-center gap-2">✓ Voice recognition</li>
+                <li class="flex items-center gap-2">✓ IoT integration</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-6 flex justify-center">
+            <label for="modal-3" class="bg-teal-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-teal-700 transition cursor-pointer">
+              Watch Session Video
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Additional Resources Section -->
+    <div class="mt-16 max-w-4xl mx-auto">
+      <h3 class="text-2xl font-bold text-center text-blue-600 mb-8">Additional Resources</h3>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-xl transition">
+          <div class="text-4xl mb-4">💻</div>
+          <h4 class="font-semibold text-blue-700 mb-2">Programming Guide</h4>
+          <p class="text-gray-600 text-sm">Arduino, Python, and C++ tutorials</p>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-xl transition">
+          <div class="text-4xl mb-4">🔧</div>
+          <h4 class="font-semibold text-blue-700 mb-2">Hardware Guide</h4>
+          <p class="text-gray-600 text-sm">Components, sensors, and circuit design</p>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-xl transition">
+          <div class="text-4xl mb-4">🏆</div>
+          <h4 class="font-semibold text-blue-700 mb-2">Competition Prep</h4>
+          <p class="text-gray-600 text-sm">Strategies and tips for robotics competitions</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Equipment & Tools Section -->
+    <div class="mt-16 max-w-4xl mx-auto">
+      <h3 class="text-2xl font-bold text-center text-blue-600 mb-8">Equipment & Tools</h3>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white rounded-2xl shadow-lg p-6">
+          <h4 class="font-semibold text-blue-700 mb-4 text-center">Hardware</h4>
+          <ul class="space-y-2 text-gray-600">
+            <li class="flex items-center gap-2">✓ Arduino Uno and Mega boards</li>
+            <li class="flex items-center gap-2">✓ Various sensors (ultrasonic, IR, etc.)</li>
+            <li class="flex items-center gap-2">✓ DC motors and servos</li>
+            <li class="flex items-center gap-2">✓ Breadboards and jumper wires</li>
+            <li class="flex items-center gap-2">✓ 3D printed robot chassis</li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg p-6">
+          <h4 class="font-semibold text-blue-700 mb-4 text-center">Software</h4>
+          <ul class="space-y-2 text-gray-600">
+            <li class="flex items-center gap-2">✓ Arduino IDE</li>
+            <li class="flex items-center gap-2">✓ Python with libraries</li>
+            <li class="flex items-center gap-2">✓ TinkerCAD Circuits</li>
+            <li class="flex items-center gap-2">✓ MIT App Inventor</li>
+            <li class="flex items-center gap-2">✓ Robot simulation software</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </main>
 
@@ -35,29 +186,57 @@
   <input type="checkbox" id="modal-2" class="hidden peer/modal-2">
   <input type="checkbox" id="modal-3" class="hidden peer/modal-3">
 
-  <div class="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center opacity-0 pointer-events-none peer-checked/modal-1:opacity-100 peer-checked/modal-1:pointer-events-auto transition duration-300">
-    <div class="bg-white p-4 rounded-3xl shadow-2xl w-11/12 max-w-md relative">
-      <label for="modal-1" class="absolute top-2 right-3 text-gray-500 text-3xl cursor-pointer hover:text-red-500 transition">&times;</label>
-      <iframe class="w-full h-60 sm:h-80 md:h-96 rounded-xl" src="https://www.youtube.com/embed/YOUR_VIDEO_ID7" frameborder="0" allowfullscreen></iframe>
+  <!-- Modal 1 -->
+  <div class="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center opacity-0 pointer-events-none peer-checked/modal-1:opacity-100 peer-checked/modal-1:pointer-events-auto transition duration-300 z-50">
+    <div class="bg-white p-6 rounded-3xl shadow-2xl w-11/12 max-w-4xl relative">
+      <label for="modal-1" class="absolute top-4 right-6 text-gray-500 text-3xl cursor-pointer hover:text-red-500 transition">&times;</label>
+      <h3 class="text-2xl font-bold text-blue-600 mb-4">Session 1: Introduction to Robotics & Programming</h3>
+      <div class="aspect-video rounded-xl overflow-hidden">
+        <iframe class="w-full h-full" src="https://www.youtube.com/embed/JdNQD-3XBVE" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="mt-4 text-gray-600">
+        <p>This session introduces you to the world of robotics, covering basic programming concepts, Arduino fundamentals, and simple robot assembly.</p>
+      </div>
     </div>
   </div>
 
-  <div class="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center opacity-0 pointer-events-none peer-checked/modal-2:opacity-100 peer-checked/modal-2:pointer-events-auto transition duration-300">
-    <div class="bg-white p-4 rounded-3xl shadow-2xl w-11/12 max-w-md relative">
-      <label for="modal-2" class="absolute top-2 right-3 text-gray-500 text-3xl cursor-pointer hover:text-red-500 transition">&times;</label>
-      <iframe class="w-full h-60 sm:h-80 md:h-96 rounded-xl" src="https://www.youtube.com/embed/YOUR_VIDEO_ID8" frameborder="0" allowfullscreen></iframe>
+  <!-- Modal 2 -->
+  <div class="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center opacity-0 pointer-events-none peer-checked/modal-2:opacity-100 peer-checked/modal-2:pointer-events-auto transition duration-300 z-50">
+    <div class="bg-white p-6 rounded-3xl shadow-2xl w-11/12 max-w-4xl relative">
+      <label for="modal-2" class="absolute top-4 right-6 text-gray-500 text-3xl cursor-pointer hover:text-red-500 transition">&times;</label>
+      <h3 class="text-2xl font-bold text-cyan-600 mb-4">Session 2: Advanced Robotics & Automation</h3>
+      <div class="aspect-video rounded-xl overflow-hidden">
+        <iframe class="w-full h-full" src="https://www.youtube.com/embed/JdNQD-3XBVE" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="mt-4 text-gray-600">
+        <p>Learn advanced robotics concepts including sensor integration, motor control, PID algorithms, and wireless communication.</p>
+      </div>
     </div>
   </div>
 
-  <div class="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center opacity-0 pointer-events-none peer-checked/modal-3:opacity-100 peer-checked/modal-3:pointer-events-auto transition duration-300">
-    <div class="bg-white p-4 rounded-3xl shadow-2xl w-11/12 max-w-md relative">
-      <label for="modal-3" class="absolute top-2 right-3 text-gray-500 text-3xl cursor-pointer hover:text-red-500 transition">&times;</label>
-      <iframe class="w-full h-60 sm:h-80 md:h-96 rounded-xl" src="https://www.youtube.com/embed/YOUR_VIDEO_ID9" frameborder="0" allowfullscreen></iframe>
+  <!-- Modal 3 -->
+  <div class="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center opacity-0 pointer-events-none peer-checked/modal-3:opacity-100 peer-checked/modal-3:pointer-events-auto transition duration-300 z-50">
+    <div class="bg-white p-6 rounded-3xl shadow-2xl w-11/12 max-w-4xl relative">
+      <label for="modal-3" class="absolute top-4 right-6 text-gray-500 text-3xl cursor-pointer hover:text-red-500 transition">&times;</label>
+      <h3 class="text-2xl font-bold text-teal-600 mb-4">Session 3: Competition Robotics & AI</h3>
+      <div class="aspect-video rounded-xl overflow-hidden">
+        <iframe class="w-full h-full" src="https://www.youtube.com/embed/JdNQD-3XBVE" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="mt-4 text-gray-600">
+        <p>Master competition strategies, advanced algorithms, and explore the integration of AI and machine learning in robotics.</p>
+      </div>
     </div>
   </div>
 
-  <footer class="bg-gray-800 text-white py-5 text-center mt-auto">
-    <p>© 2025 FabLab RedSea STEM Club. All rights reserved.</p>
+  <footer class="bg-gray-800 text-white py-8 text-center mt-auto">
+    <div class="container mx-auto px-4">
+      <p class="mb-2">© 2025 FabLab RedSea STEM Club. All rights reserved.</p>
+      <div class="flex justify-center gap-4 text-sm">
+        <a href="index.html" class="hover:underline">Home</a>
+        <a href="2D.html" class="hover:underline">2D Design</a>
+        <a href="3d.html" class="hover:underline">3D Design</a>
+      </div>
+    </div>
   </footer>
 
 </body>
